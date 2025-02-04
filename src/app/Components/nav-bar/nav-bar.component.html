@@ -1,0 +1,20 @@
+<div class="up-Navbar">
+    <div class="left">
+        <app-sidebar [status]="status"></app-sidebar>
+        <div class="imagem" (click)="clickEvent()">
+            <img src="../../../assets/images/Logo.png" alt="">
+        </div>
+    </div>
+    <div class="links">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="teste" href="contatos">Sobre Nós</a>
+            </li>
+                
+        </ul>
+    </div>
+</div>
+<div class="busca">
+    <input type="text" placeholder="Pesquise Sua Futura Moto" [(ngModel)]="Model">
+    <button><img src="assets/images/pngwing.webp" alt="" ></button>
+</div>

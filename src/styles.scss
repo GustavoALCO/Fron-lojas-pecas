@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; //funciona para a font não expandir mais que o necessario
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+// Cores para a Aplicacao 
+
+$Cor-Principal: #c0c0c0;
+$Cor-Secundaria: #020202;
+$Cor-Texto-claro: #030303;
+$Cor-Texto-escuro: #FFFCF1;
+$Cor-Card: #d8d8d8;
+$Cor-Admin: #e6c953f6;

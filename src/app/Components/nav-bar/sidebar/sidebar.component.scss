@@ -1,0 +1,45 @@
+@import "../../../../styles.scss";
+
+#sidebar-wrapper {
+    z-index: 1;
+    width: 200px;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+    background-color: $Cor-Texto-claro;
+    border-bottom-right-radius: 15px;
+  }
+  
+  /* Define a largura da barra lateral quando estiver colapsada */
+  #sidebar-wrapper.collapsed {
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: width 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* Ajuste para a área do conteúdo */
+  #page-content-wrapper {
+    transition: margin-left 0.3s ease;
+  }
+  
+  /* Quando a sidebar estiver colapsada, o conteúdo se ajusta */
+  #sidebar-wrapper.collapsed + #page-content-wrapper {
+    margin-left: 0;
+  }
+
+  .Itens {
+    
+    display: flex;
+    align-items: center;
+    background-color: $Cor-Texto-claro;
+    color: $Cor-Admin;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    width: fit-content;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
