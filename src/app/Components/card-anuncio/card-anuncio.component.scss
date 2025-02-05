@@ -1,0 +1,65 @@
+@import "../../../styles.scss";
+
+:host{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 360px;
+    background-color: $Cor-Card;
+    border-radius: 15px;
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.50);
+    border: solid 1px black;
+    overflow: hidden;
+    .up-card{
+        margin: 0 auto;
+        width: 220px;
+        height: 220px;
+        margin-top: 10px;
+        
+        img{
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    }
+
+    .mid-card{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+
+        h6{
+            font-weight: bold;
+            width: 100%;
+            white-space: nowrap; /* Impede que o texto quebre para a próxima linha */
+            overflow: hidden; /* Oculta o texto que ultrapassar o limite */
+            text-overflow: ellipsis; /* Adiciona "..." quando o texto for cortado */
+            text-transform: uppercase;
+        }
+
+        .price{
+            margin-top: 10px;
+            
+            .Bold{
+                font-weight: bold;
+                color: $Cor-Admin;
+                text-shadow:
+                            1.5px 1px 3px #000,
+                            
+
+            }
+        }
+    }
+
+   
+}
+:host:hover{
+    cursor: pointer;
+}
+
+:host:active{
+    position: relative;
+    top: 1px;
+}

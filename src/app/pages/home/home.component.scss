@@ -5,11 +5,10 @@
     flex-direction: column;
     background-color: $Cor-Principal;
     width: 100%;
-    height: 100%;
+    overflow: hidden;
 
     .imagem {
         border-radius: 15px;
-        overflow: hidden;
         margin: 0 auto;
         margin-top: 50px;
         width: 80%;
@@ -19,11 +18,11 @@
 
     .promocoes{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 15px;
+        grid-template-columns: repeat(5, 1fr);
         width: 80%;
         margin: 0 auto;
         margin-top: 50px;
+        margin-bottom: 15px;
         column-count: 2;
         column-gap: 30px;
     }
