@@ -25,5 +25,9 @@
         margin-bottom: 15px;
         column-count: 2;
         column-gap: 30px;
+        overflow: hidden;
+        app-carrousel-cards{
+            width: 100%;
+        }
     }
 }

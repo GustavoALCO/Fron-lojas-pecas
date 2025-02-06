@@ -49,6 +49,7 @@ formatarValor(){
     this.valor = (this.preco * 1).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     this.precoParcela = (this.precoParcela * 1).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
+
 ngOnInit():void {
   this.valorParcela();
   this.formatarValor();
