@@ -16,6 +16,15 @@
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     }
 
+    .Departamentos{
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        gap: 63px;
+        overflow: hidden;
+    }
+
     .promocoes{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -23,11 +32,13 @@
         margin: 0 auto;
         margin-top: 50px;
         margin-bottom: 15px;
-        column-count: 2;
-        column-gap: 30px;
-        overflow: hidden;
-        app-carrousel-cards{
-            width: 100%;
-        }
     }
 }
+
+@media (max-width: 1450px) {
+    .Departamentos {
+        gap: 15px; // Defina o valor desejado para telas menores
+    }
+}
+
+    

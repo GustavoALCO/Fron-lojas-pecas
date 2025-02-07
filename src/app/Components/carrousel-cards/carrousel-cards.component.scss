@@ -1,42 +1,47 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 50px;  /* Largura maior */
-    height: 50px; /* Altura maior */
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro transparente */
-    border-radius: 50%; /* Deixa arredondado */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro transparente */
+    border-radius: 5px; /* Deixa arredondado */
 }
 
 /* Faz a seta ficar mais visível ao passar o mouse */
 .carousel-control-prev:hover .carousel-control-prev-icon,
 .carousel-control-next:hover .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 1); /* Fundo totalmente preto no hover */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo totalmente preto no hover */
 }
 
 /* Ajusta a posição das setas */
 .carousel-control-prev {
-    left: -80px; /* Move um pouco para fora */
+    left: -140px; /* Move um pouco para fora */
 }
 
 .carousel-control-next {
-    right: -80px; /* Move um pouco para fora */
+    right: -140px; /* Move um pouco para fora */
 }
-/* Adiciona espaçamento entre os cards */
 
-@media (min-width: 1200px) {
-    .carousel-inner .d-flex {
-        gap: 25px;
+.carousel-inner .d-flex {
+    gap: 25px;
+}
+
+@media (max-width: 1440px) {
+
+    .carousel-control-prev {
+        left: -115px; /* Move um pouco para fora */
+    }
+    
+    .carousel-control-next {
+        right: -115px; /* Move um pouco para fora */
     }
 }
 
-@media (max-width: 1199px) and (min-width: 768px) {
-    .carousel-inner .d-flex {
-        gap: 20px;
-    }
-}
+@media (max-width: 1370px) {
 
-@media (max-width: 767px) {
-    .carousel-inner .d-flex {
-        gap: 10px;
+    .carousel-control-prev {
+        left: -110px; /* Move um pouco para fora */
+    }
+    
+    .carousel-control-next {
+        right: -110px; /* Move um pouco para fora */
     }
 }

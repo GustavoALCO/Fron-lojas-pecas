@@ -3,8 +3,8 @@
 :host{
     display: flex;
     flex-direction: column;
-    width: 270px;
-    height: 360px;
+    min-width: 220px;
+    height: 340px;
     background-color: $Cor-Card;
     border-radius: 15px;
     box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.50);
@@ -12,8 +12,7 @@
     overflow: hidden;
     .up-card{
         margin: 0 auto;
-        width: 220px;
-        height: 220px;
+        width: 90%;
         margin-top: 10px;
         
         img{
@@ -62,4 +61,20 @@
 :host:active{
     position: relative;
     top: 1px;
+}
+
+@media (max-width: 1440px) {
+
+    :host{
+        width: 250px;
+        height: 340px;
+    }
+}
+
+@media (max-width: 1370px) {
+
+    :host{
+        width: 245px;
+        height: 340px;
+    }
 }
