@@ -1,0 +1,83 @@
+@import "../../../styles.scss";
+
+:host{
+    display: flex;
+    flex-direction: column;
+    background-color: $Cor-Principal;
+    height: auto;
+}
+
+.buttons{
+    margin-left: 50px;
+    margin-top: 20px;
+    
+    
+}
+
+.anuncios{
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.Filter{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: $Cor-Card;
+    height: 30px;
+    width: 120px;
+    border: solid 1px $Cor-Texto-claro;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.75);
+    text-align: center;
+}
+    
+.Filter:active{
+    top: 1px;
+}
+
+.btn-close {
+    background-color: $Cor-Card; // Define a cor de fundo
+    height: 30px;
+    width: 120px;
+    border-radius: 5px; // Opcional, para deixar as bordas arredondadas
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carregar {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: $Cor-Card;
+    height: 30px;
+    width: 120px;
+    border: solid 1px $Cor-Texto-claro;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+.carregar.active {
+    top: 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid;
+    border-color: #E4E4ED;
+    border-right-color: $Cor-Admin;
+    animation: s2 2s infinite linear;
+    font-size: 0;
+    box-shadow: 0px 0px 0px 0px;
+    background-color: $Cor-Principal;
+}
+@keyframes s2 {
+    to {
+        transform: rotate(1turn);
+    }
+}
