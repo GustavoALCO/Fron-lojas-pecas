@@ -1,0 +1,38 @@
+<div class="Input">
+  <H3 style="margin-top: 20px; margin-left: 20px;">Filtrar por</H3>
+
+  <div class="Montadora">
+    <h5 class="bold">Selecione a Montadora</h5>
+    <div class="risco"></div>
+    <section class="Section" [formGroup]="toppings">
+      <p><mat-checkbox formControlName="pepperoni">Pepperoni</mat-checkbox></p>
+      <p><mat-checkbox formControlName="extracheese">Extra Cheese</mat-checkbox></p>
+      <p><mat-checkbox formControlName="mushroom">Mushroom</mat-checkbox></p>
+    </section>
+  </div>
+  
+  <div class="Marca">
+    <h5 class="bold">Selecione a Montadora</h5>
+    <div class="risco"></div>
+    <section class="Section" [formGroup]="toppings">
+      <p><mat-checkbox formControlName="pepperoni">Pepperoni</mat-checkbox></p>
+      <p><mat-checkbox formControlName="extracheese">Extra Cheese</mat-checkbox></p>
+      <p><mat-checkbox formControlName="mushroom">Mushroom</mat-checkbox></p>
+    </section>
+  </div>
+
+  <div class="preco">
+    <h5 class="bold">Selecione o preço</h5>
+    <div class="risco"></div>
+
+    <div class="inputs">
+      <input type="text" placeholder="R$ 5.000" maxlength="6" >
+      <span style="font-size: 0.7rem; margin: 0 auto; padding: 5px;">Até</span>
+      <input  type="text" placeholder="R$ 60.000" maxlength="6" >
+  </div>
+  </div>
+  <div class="button">
+    <button class="filter"><span class="bold">Filtrar</span></button>
+  </div>
+  
+</div>

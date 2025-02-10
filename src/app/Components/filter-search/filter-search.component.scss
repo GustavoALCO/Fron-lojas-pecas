@@ -1,0 +1,78 @@
+@import "../../../styles.scss";
+
+.Input{
+   display: flex;
+   flex-direction: column;
+    height: 100vh;
+    background-color: $Cor-Card;
+    border: solid 2px black;
+    border-radius: 4px;
+
+    .bold{
+        font-weight: bold;
+    }
+
+    .risco{
+        border: solid 1px black;
+        width: 300px;
+    }
+
+    .Section{
+        height: 140px;
+        width: 300px;
+        overflow-y: scroll;
+    }
+
+    .Montadora{
+        margin-top: 50px;
+        margin-left: 20px;
+   
+    }
+    .Marca{
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .preco{
+        margin-top: 50px;
+        margin-left: 20px;
+
+        .inputs{
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            margin-top: 10px;
+            input{
+                width: 120px;
+                border-radius: 5px;
+                background-color: rgb(250, 253, 255);
+                border:solid 1px $Cor-Secundaria;
+                box-shadow: 0px 0.5px 3px 0.2px rgba(0, 0, 0, 0.7);
+                text-align: center;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+
+    .button{
+        display: flex;
+        width: 300px;
+        margin-top: 50px;
+        margin-left: 20px;
+        justify-content: center;
+        .filter{
+            position: relative;
+            width: 150px;
+            height: 30px;
+            background-color: $Cor-Card;
+            border-radius: 5px;
+            border: solid 1px black;
+            box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.7);
+        }
+        .filter:active{
+            top: 1px;
+        }    
+    }   
+    
+}
