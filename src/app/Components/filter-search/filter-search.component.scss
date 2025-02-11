@@ -18,15 +18,22 @@
     }
 
     .Section{
+        margin-top: 2px;
         height: 140px;
         width: 300px;
         overflow-y: scroll;
     }
+    .Section::-webkit-scrollbar {
+        width: 8px; 
+      }
+    .Section::-webkit-scrollbar-thumb {
+        background-color: $Cor-Secundaria; 
+        border-radius: 4px; 
+      }
 
     .Montadora{
         margin-top: 50px;
         margin-left: 20px;
-   
     }
     .Marca{
         margin-top: 50px;

@@ -1,0 +1,132 @@
+@import "../../../styles.scss";
+
+:host{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: $Cor-Principal;
+    .up-card{
+        display: flex;
+        background-color: $Cor-Card;
+        width: 1300px;
+        border: solid 1px black;
+        height: 600px;
+        margin: 0 auto;
+        margin-top: 30px;
+        border-radius: 5px;
+        overflow: hidden;
+        .images{
+            display: flex;
+            height: 100%;
+            height: 100%;
+            align-items: center;
+            border-right: solid 1px black;
+            img{
+                margin-left: 15px;
+                height: 590px;
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 3px 2px 2px 3px rgba(0, 0, 0, 0.2);
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                gap: 17px;
+                margin-right: 15px;
+                
+                img{
+                    height: 285px ; 
+                }
+                .filter{
+                    -webkit-filter: blur(3px);
+                    filter: blur(3px);
+                }
+            }
+        }
+        .info{
+            width: 340px;
+            margin: 0 auto;
+        }
+        .c-info{
+            display: flex;
+            flex-direction: column;
+            margin-left: 25px;
+            margin-top: 40px;
+            h5 {
+                display: -webkit-box;
+                -webkit-line-clamp: 2; /* Limita para até 2 linhas */
+                -webkit-box-orient: vertical;
+                font-weight: bold;
+                white-space: normal; /* Permite quebra de linha */
+                overflow: hidden; /* Oculta o texto que ultrapassar o limite */ 
+                text-overflow: ellipsis; /* Adiciona "..." quando o texto for cortado */
+                text-transform: uppercase;
+                width: 310px;
+            }
+
+            
+            p{
+                font-size: 1.1rem;
+                
+                margin-left: 30px;
+                margin-top: 20px;
+
+                .preco{
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    margin-top: 30px;
+                }
+            }
+
+            input{
+                text-align: center;
+                width: 250px;
+                border-radius: 5px;
+                box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.842);
+                border: solid 2px black;
+            }
+            
+            input:focus, 
+            input:focus-visible {
+            border: none; /* Remove a borda ao focar */
+            outline: none; /* Remove o contorno do navegador */
+            }
+            input[type="number"]::-webkit-inner-spin-button, 
+            input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+            }
+            
+            .comprar{
+                margin-top: 50px;
+                border-radius: 5px;
+                background-color: $Cor-Admin;
+                border: solid 1px black;
+                font-weight: bold;
+                color: antiquewhite;
+                -webkit-text-stroke: 0.9px black;
+                font-size: 1.5rem;
+                text-shadow: 1px 1px 0 black;    
+                box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.842);          
+            }
+            .carrinho{
+                margin-top: 20px;
+                border-radius: 5px;
+                background-color: $Cor-Card;
+                border: solid 1px $Cor-Admin;
+                font-weight: bold;
+                background-color: $Cor-Secundaria;
+                color: $Cor-Admin;
+                -webkit-text-stroke: 0.9px $Cor-Secundaria;
+                font-size: 1.5rem;
+                box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.842);            
+            }
+            button:active{
+                position: relative;
+                top: 1px;
+            }
+        }
+    }
+}

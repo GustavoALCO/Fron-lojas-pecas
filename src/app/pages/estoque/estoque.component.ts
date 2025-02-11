@@ -20,7 +20,7 @@ export class EstoqueComponent {
 
   openDialog() {
     this.dialog.open(FilterSearchComponent,{
-      width: "400px",
+      width: "350px",
       height: "700px",
       exitAnimationDuration: "0.3s",
       
