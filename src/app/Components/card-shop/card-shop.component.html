@@ -1,0 +1,19 @@
+<div class="image">
+    <img src="assets/images/foto1.jpeg" alt="">
+</div>
+<div class="rigth">
+    <div class="top">
+        <h5>Filtro de Óleo - Metal Horse - FO-987654</h5>
+    </div>
+    <div class="bottom">
+        <div class="buttons">
+            <button class="subtração" (click)="subtrair()">-</button>
+            <span class="contador">{{contador}}</span>
+            <button class="adicao" (click)="adicionar()">+</button>
+        </div>
+        <div class="valor">
+            <span class="preco">R$ : {{preco.toFixed(2)}}</span>
+        </div>
+        
+    </div>
+</div>

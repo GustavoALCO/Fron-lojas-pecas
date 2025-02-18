@@ -1,0 +1,174 @@
+@import '../../../styles.scss';
+
+:host{
+    display: flex;
+    flex-direction: column;
+    background-color: $Cor-Principal;
+    width: 100%;
+    height: 100vh;
+
+    .infos{
+        display: flex;
+        height: 800px;
+        width: 1300px;
+        margin: 0 auto;
+        margin-top: 30px;
+        justify-content: space-around;
+        background-color: $Cor-Card;
+        box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.404);
+        border: solid 1px $Cor-Secundaria;
+        .left{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin-left: 20px;
+            
+            .card{
+                background-color: $Cor-Card;
+                .list{
+                    width: 900px;
+                    height: 600px;
+                    margin-top: 20px;
+                    border: solid 1px $Cor-Secundaria;
+                    border-radius: 5px;
+                    overflow-y: scroll;
+                    
+                }
+                .list::-webkit-scrollbar {
+                    width: 8px; /* Largura da barra de rolagem */
+                  }
+                .list::-webkit-scrollbar-thumb {
+                    background-color: $Cor-Secundaria; /* Cor do botão da barra de rolagem */
+                    border-radius: 4px; /* Raio de borda do botão da barra de rolagem */
+                  }
+            }
+            
+            .text{
+                margin-top: 30px;
+                font-weight: bold;
+            }
+            .cep{
+                display: flex;
+
+                input{
+                    text-align: center;
+                    width: 250px;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.842);
+                    border-bottom: solid 2px black;
+                    border-top: solid 2px black;
+                    border-left: solid 2px black;
+                }
+
+                .cepbutton{
+                    
+                    border-bottom-right-radius: 5px;
+                    border-top-right-radius: 5px;
+                    box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.842);
+                    border: solid 2px black;
+                    width: 50px;
+                    background-color: $Cor-Card;
+
+                    img{
+                        height: 20px;
+                        
+                    }
+                }
+
+                .cepbutton:active{
+                    position: relative;
+                    top: 1px;
+                }
+            }   
+            
+            
+            
+            input:focus, 
+            input:focus-visible {
+            border: none; /* Remove a borda ao focar */
+            outline: none; /* Remove o contorno do navegador */
+            }
+            input[type="number"]::-webkit-inner-spin-button, 
+            input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+            }
+        }
+    
+        .rigth{
+            width: 350px;
+            height: 100%;
+           
+            margin-top: 20px;
+
+            .card-info{
+                height: 400px;
+                width: 340px;
+                margin: 0 auto;
+                border-radius: 5px;
+                border: solid 1px $Cor-Secundaria;
+                padding: 15px;
+
+                .dashed{
+                    border: solid 1px $Cor-Secundaria;
+                    border-style: dashed;
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+                .title{
+                    font-size: 1.2rem;
+                }
+                .price{
+                    margin-left: 10px;
+                    font-weight: bold;
+                }
+                
+                .frete{
+                    display: flex;
+
+                    .value{
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 150px;
+                    }
+                }
+                .buttons{
+                    display: flex;
+                    flex-direction: column;
+
+                    .comprar{
+                        margin-top: 50px;
+                        border-radius: 5px;
+                        background-color: $Cor-Admin;
+                        border: solid 1px black;
+                        font-weight: bold;
+                        color: antiquewhite;
+                        -webkit-text-stroke: 0.9px black;
+                        font-size: 1.5rem;
+                        text-shadow: 1px 1px 0 black;    
+                        box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.842);          
+                    }
+                    .carrinho{
+                        margin-top: 20px;
+                        border-radius: 5px;
+                        background-color: $Cor-Card;
+                        border: solid 1px $Cor-Admin;
+                        font-weight: bold;
+                        background-color: $Cor-Secundaria;
+                        color: $Cor-Admin;
+                        -webkit-text-stroke: 0.9px $Cor-Secundaria;
+                        font-size: 1.5rem;
+                        box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.842);            
+                    }
+                    button:active{
+                        position: relative;
+                        top: 1px;
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
